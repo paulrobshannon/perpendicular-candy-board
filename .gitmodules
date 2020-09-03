@@ -7,3 +7,6 @@
 [submodule "kicad-pcb-project/src/Type-C.pretty"]
 	path = kicad-pcb-project/src/Type-C.pretty
 	url = https://github.com/ai03-2725/Type-C.pretty.git
+[submodule "kicad-pcb-project/src/keyswitches.pretty"]
+	path = kicad-pcb-project/src/keyswitches.pretty
+	url = https://github.com/daprice/keyswitches.pretty.git
