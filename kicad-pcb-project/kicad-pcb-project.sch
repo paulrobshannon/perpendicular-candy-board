@@ -134,14 +134,9 @@ F 3 "" H 3190 5170 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3590 4860 3580 4860
-Wire Wire Line
 	3190 4860 3190 4870
 Wire Wire Line
 	3190 5070 3190 5170
-Connection ~ 3580 4860
-Wire Wire Line
-	3580 4860 3190 4860
 $Comp
 L Device:C_Small C?
 U 1 1 5F4BC58A
@@ -2458,12 +2453,220 @@ Wire Wire Line
 $Comp
 L Type-C:HRO-TYPE-C-31-M-12 USB?
 U 1 1 5F8EF13C
-P 6000 2310
-F 0 "USB?" H 5833 3107 60  0000 C CNN
-F 1 "HRO-TYPE-C-31-M-12" H 5833 3001 60  0000 C CNN
-F 2 "" H 6000 2310 60  0001 C CNN
-F 3 "" H 6000 2310 60  0001 C CNN
-	1    6000 2310
+P 4740 1390
+F 0 "USB?" H 4573 2187 60  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" H 4573 2081 60  0000 C CNN
+F 2 "" H 4740 1390 60  0001 C CNN
+F 3 "" H 4740 1390 60  0001 C CNN
+	1    4740 1390
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F9027B8
+P 6350 1540
+F 0 "R?" V 6460 1550 50  0000 C BNN
+F 1 "22" V 6510 1600 50  0000 R CNN
+F 2 "" H 6350 1540 50  0001 C CNN
+F 3 "~" H 6350 1540 50  0001 C CNN
+	1    6350 1540
+	0    1    1    0   
+$EndComp
+Text GLabel 6600 1540 2    50   Input ~ 0
+D+
+Wire Wire Line
+	6600 1540 6450 1540
+Wire Wire Line
+	4840 1340 5050 1340
+$Comp
+L Device:R_Small R?
+U 1 1 5F96A43A
+P 6350 1440
+F 0 "R?" V 6154 1440 50  0000 C CNN
+F 1 "22" V 6245 1440 50  0000 C CNN
+F 2 "" H 6350 1440 50  0001 C CNN
+F 3 "~" H 6350 1440 50  0001 C CNN
+	1    6350 1440
+	0    1    1    0   
+$EndComp
+Text GLabel 6600 1440 2    50   Input ~ 0
+D-
+Wire Wire Line
+	6600 1440 6450 1440
+Wire Wire Line
+	4840 1440 5160 1440
+Wire Wire Line
+	4840 1240 5160 1240
+Wire Wire Line
+	5160 1240 5160 1440
+Wire Wire Line
+	4840 2040 4920 2040
+Wire Wire Line
+	4840 840  4920 840 
+Wire Wire Line
+	4840 1940 4920 1940
+Connection ~ 4920 1940
+Wire Wire Line
+	4920 1940 4920 2040
+Wire Wire Line
+	4840 1840 4970 1840
+Wire Wire Line
+	4970 940  4970 1840
+Wire Wire Line
+	4970 940  4840 940 
+Wire Wire Line
+	3580 4860 3190 4860
+Wire Wire Line
+	4970 940  5290 940 
+Connection ~ 4970 940 
+$Comp
+L power:+5V #PWR?
+U 1 1 5FD2A6CB
+P 5680 940
+F 0 "#PWR?" H 5680 790 50  0001 C CNN
+F 1 "+5V" V 5695 1068 50  0000 L CNN
+F 2 "" H 5680 940 50  0001 C CNN
+F 3 "" H 5680 940 50  0001 C CNN
+	1    5680 940 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5FD2C00E
+P 5480 940
+F 0 "F?" V 5275 940 50  0000 C CNN
+F 1 "500mA" V 5366 940 50  0000 C CNN
+F 2 "" H 5530 740 50  0001 L CNN
+F 3 "~" H 5480 940 50  0001 C CNN
+	1    5480 940 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5680 940  5580 940 
+$Comp
+L Device:R_Small R?
+U 1 1 5FD46B9D
+P 5460 1840
+F 0 "R?" H 5519 1886 50  0000 L CNN
+F 1 "5.1k" H 5519 1795 50  0000 L CNN
+F 2 "" H 5460 1840 50  0001 C CNN
+F 3 "~" H 5460 1840 50  0001 C CNN
+	1    5460 1840
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FD48619
+P 5260 1840
+F 0 "R?" H 5319 1886 50  0000 L CNN
+F 1 "5.1k" H 5050 1820 50  0000 L CNN
+F 2 "" H 5260 1840 50  0001 C CNN
+F 3 "~" H 5260 1840 50  0001 C CNN
+	1    5260 1840
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1340 5050 1540
+Wire Wire Line
+	4840 1540 5050 1540
+Connection ~ 5050 1540
+Connection ~ 5160 1440
+Wire Wire Line
+	5050 1540 5810 1540
+Wire Wire Line
+	5160 1440 6150 1440
+Wire Wire Line
+	4920 840  4920 1940
+Wire Wire Line
+	4920 1940 5090 1940
+Connection ~ 5260 1940
+Wire Wire Line
+	5260 1940 5460 1940
+Wire Wire Line
+	4840 1740 5260 1740
+Wire Wire Line
+	4840 1140 5460 1140
+Wire Wire Line
+	5460 1140 5460 1740
+$Comp
+L power:GND #PWR?
+U 1 1 5FEC8911
+P 5090 2120
+F 0 "#PWR?" H 5090 1870 50  0001 C CNN
+F 1 "GND" H 5095 1947 50  0000 C CNN
+F 2 "" H 5090 2120 50  0001 C CNN
+F 3 "" H 5090 2120 50  0001 C CNN
+	1    5090 2120
+	1    0    0    -1  
+$EndComp
+Connection ~ 5090 1940
+Wire Wire Line
+	5090 1940 5260 1940
+$Comp
+L power:VCC #PWR?
+U 1 1 5FFBF056
+P 5290 940
+F 0 "#PWR?" H 5290 790 50  0001 C CNN
+F 1 "VCC" H 5305 1113 50  0000 C CNN
+F 2 "" H 5290 940 50  0001 C CNN
+F 3 "" H 5290 940 50  0001 C CNN
+	1    5290 940 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5290 940  5380 940 
+Connection ~ 5290 940 
+$Comp
+L Power_Protection:PRTR5V0U2X D?
+U 1 1 5FFEE231
+P 5990 2550
+F 0 "D?" H 6534 2596 50  0000 L CNN
+F 1 "PRTR5V0U2X" H 6534 2505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 6050 2550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 6050 2550 50  0001 C CNN
+	1    5990 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5090 1940 5090 2100
+Wire Wire Line
+	5990 3060 5260 3060
+Wire Wire Line
+	5260 3060 5260 2100
+Wire Wire Line
+	5260 2100 5090 2100
+Connection ~ 5090 2100
+Wire Wire Line
+	5090 2100 5090 2120
+$Comp
+L power:VCC #PWR?
+U 1 1 60107DA4
+P 5990 1960
+F 0 "#PWR?" H 5990 1810 50  0001 C CNN
+F 1 "VCC" H 6005 2133 50  0000 C CNN
+F 2 "" H 5990 1960 50  0001 C CNN
+F 3 "" H 5990 1960 50  0001 C CNN
+	1    5990 1960
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5990 1970 5990 2050
+Wire Wire Line
+	5500 2550 5500 2060
+Wire Wire Line
+	5500 2060 5810 2060
+Wire Wire Line
+	5810 2060 5810 1540
+Connection ~ 5810 1540
+Wire Wire Line
+	5810 1540 6250 1540
+Wire Wire Line
+	6490 2550 6490 2050
+Wire Wire Line
+	6490 2050 6150 2050
+Wire Wire Line
+	6150 2050 6150 1440
+Connection ~ 6150 1440
+Wire Wire Line
+	6150 1440 6250 1440
 $EndSCHEMATC
