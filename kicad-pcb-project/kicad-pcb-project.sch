@@ -2796,4 +2796,24 @@ Wire Wire Line
 Connection ~ 12880 8520
 Text Notes 13920 8870 0    118  Italic 24
 Switch Matrix\n
+Wire Notes Line width 20
+	5570 4610 5570 9440
+Wire Notes Line width 20
+	5570 9440 830  9440
+Wire Notes Line width 20
+	830  9440 830  4610
+Wire Notes Line width 20
+	830  4610 5570 4610
+Text Notes 1970 9100 0    118  Italic 24
+MCU
+Wire Notes Line width 20
+	9070 790  9070 3710
+Wire Notes Line width 20
+	9070 3710 5490 3710
+Wire Notes Line width 20
+	5490 3710 5490 790 
+Wire Notes Line width 20
+	5490 790  9070 790 
+Text Notes 8180 3490 0    118  Italic 24
+USB-C
 $EndSCHEMATC

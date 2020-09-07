@@ -2794,4 +2794,6 @@ Connection ~ 13170 7640
 Wire Wire Line
 	12880 7840 12880 8520
 Connection ~ 12880 8520
+Text Notes 13920 8870 0    118  Italic 24
+Switch Matrix\n
 $EndSCHEMATC
